@@ -1,0 +1,48 @@
+<h5 class="text-color-5 px-3 font-18">Add New Parcel (Regular Service)</h5>
+<hr>
+<div class="tab-content p-3">
+    <div class="tab-pane d-block">
+        <form method="POST" action="parcel-save.php"><input type="hidden" name="_token"
+                value="DaqpKdQhv1bozeiPOyMGlgwZy9OQAq6ZhoOdVwxq">
+            <div class="form-group row"><label for="invoice"
+                    class="col-xl-2 col-lg-3 col-md-4 text-color-5 font-14 col-form-label">Invoice#</label>
+                <div class="col-xl-4 col-lg-5 col-md-8"><input type="text" name="invoice" value=""
+                        placeholder="Invoice or Memo Number" id="invoice" class="form-control text-color-5"></div>
+            </div>
+            <div class="form-group row"><label for="cod"
+                    class="col-xl-2 col-lg-3 col-md-4 text-color-5 font-14 col-form-label">COD Amount</label>
+                <div class="col-xl-4 col-lg-5 col-md-8"><input type="text" id="cod"
+                        placeholder="Cash amount including Delivery charge" name="cod_amount" value=""
+                        class="form-control text-color-5"></div>
+            </div>
+            <div class="form-group row"><label for="name"
+                    class="col-xl-2 col-lg-3 col-md-4 text-color-5 font-14 col-form-label">Name</label>
+                <div class="col-xl-4 col-lg-5 col-md-8"><input type="text" name="cus_name" value="" id="name"
+                        placeholder="Recipient Name" class="form-control text-color-5"></div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xl-2 col-lg-3 col-md-4"><label for="address"
+                        class="text-color-5 font-14 col-form-label">Address</label> <small
+                        class="form-text text-muted">(maximum 500 characters)</small></div>
+                <div class="col-xl-4 col-lg-5 col-md-8"><textarea id="address" rows="3" name="cus_address"
+                        placeholder="Recipient Address" class="form-control text-color-5"></textarea></div>
+            </div>
+            <div class="form-group row"><label for="phoneNo"
+                    class="col-xl-2 col-lg-3 col-md-4 text-color-5 font-14 col-form-label">Phone Number</label>
+                <div class="col-xl-4 col-lg-5 col-md-8"><input type="text" id="phoneNo" name="cus_phone" value=""
+                        placeholder="Recipient Phone Number" class="form-control text-color-5"></div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xl-2 col-lg-3 col-md-4"><label for="note"
+                        class="text-color-5 font-14 col-form-label">Note</label> <small
+                        class="form-text text-muted">(maximum 300 characters)</small></div>
+                <div class="col-xl-4 col-lg-5 col-md-8"><textarea id="note" rows="3" name="note"
+                        placeholder="Note (Optional)" class="form-control text-color-5"></textarea></div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xl-4 col-lg-5 col-md-8 offset-xl-2 offset-lg-3 offset-md-4 pt-4"><button type="submit"
+                        class="btn btn-block bg-color-seagreen text-white shadow-1">Submit</button></div>
+            </div>
+        </form>
+    </div>
+</div>
